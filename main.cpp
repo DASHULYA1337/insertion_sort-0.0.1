@@ -20,8 +20,6 @@ bool numbers(int & n, int * array)
 
 int main() {
 	int n ;
-	
-	int min;
 
 	string s;
 	getline(cin, s);
