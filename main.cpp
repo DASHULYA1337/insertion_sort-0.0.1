@@ -19,14 +19,14 @@ bool numbers(int & n, int * array)
 }
 
 int main() {
-	int n = 5;
-	int * array = new int;
-	int min;
+	int n;
 
 	string s;
 	getline(cin, s);
 	istringstream stream(s);
+	
 	if (stream >> n) {
+		int * array = new int [n];
 		if (numbers(n, array)) {
 			int a, j; 
 			for (int i = 1; i < n; i++){
@@ -47,8 +47,5 @@ int main() {
 			cout << "An error has occured while reading input data.";
 		}
 	}
-
-	cin.get();
-	cin.get();
 	return 0;
 }
